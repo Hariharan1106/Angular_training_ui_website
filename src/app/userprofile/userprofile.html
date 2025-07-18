@@ -1,11 +1,11 @@
 <!-- OUTER container with relative positioning -->
-<div class="relative mx-auto max-w-screen-md mt-10">
+<div class="relative mx-auto max-w-screen-xl mt-5 px-4">
   <h1 class="text-3xl font-bold text-center mb-8 text-purple-700 tracking-wide">Tech Team</h1>
 
   <!-- Left Arrow -->
   <button 
     (click)="scrollLeft()" 
-    class="absolute left-0 top-1/2 transform -translate-y-1/2 z-20 text-3xl font-bold bg-white shadow-lg px-3 py-1 rounded-full hover:bg-purple-100 transition-colors duration-200">
+    class="absolute left-0 top-1/2 transform -translate-y-1/2 z-20 text-3xl font-bold bg-white shadow-lg px-3 py-1 rounded-full hover:bg-purple-100 transition duration-300">
     ‹
   </button>
 
@@ -13,25 +13,34 @@
   <div class="mx-10">
     <div 
       #cardContainer 
-      class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar py-6 bg-gradient-to-r from-purple-50 via-white to-blue-50 rounded-2xl shadow-inner">
-      
-      <mat-card *ngFor="let user of users" 
-                class="min-w-[260px] max-w-xs p-6 rounded-2xl shadow-lg bg-white border border-purple-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-        <mat-card-title class="text-xl font-semibold text-purple-800 mb-1">{{ user.name }}</mat-card-title>
-        <mat-card-subtitle class="text-sm text-purple-500 mb-2">{{ user.role }}</mat-card-subtitle>
-        <mat-card-content>
+      class="flex gap-6 overflow-x-hidden scroll-smooth no-scrollbar px-5 py-6 bg-gradient-to-r from-purple-50 via-white to-blue-50 rounded-2xl shadow-inner">
+
+      <!-- Looping Cards -->
+      <mat-card *ngFor="let user of users"
+                class="flex-shrink-0 w-72 sm:w-80 md:w-96 p-6 rounded-2xl shadow-lg bg-white border border-purple-100 hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+
+        <!-- Circular Image -->
+       <img [src]="user.images" alt="User Image" class="w-32 h-32 object-cover rounded-full shadow-md border-4 border-purple-200 mx-auto mb-4 transition-transform duration-300 hover:scale-110" />
+
+
+        <!-- Title & Subtitle -->
+        <mat-card-title class="text-2xl text-center font-semibold text-purple-800">{{ user.name }}</mat-card-title>
+        <mat-card-subtitle class="text-sm text-center text-purple-500 mb-2">{{ user.role }}</mat-card-subtitle>
+
+        <!-- Card Content -->
+        <mat-card-content class="text-center">
           <p class="text-gray-700 mb-2">{{ user.description }}</p>
           <p class="text-gray-500 text-sm">{{ user.email }}</p>
         </mat-card-content>
       </mat-card>
+
     </div>
   </div>
 
   <!-- Right Arrow -->
   <button 
     (click)="scrollRight()" 
-    class="absolute right-0 top-1/2 transform -translate-y-1/2 z-20 text-3xl font-bold bg-white shadow-lg px-3 py-1 rounded-full hover:bg-purple-100 transition-colors duration-200">
+    class="absolute right-0 top-1/2 transform -translate-y-1/2 z-20 text-3xl font-bold bg-white shadow-lg px-3 py-1 rounded-full hover:bg-purple-100 transition duration-300">
     ›
   </button>
 </div>
-

@@ -35,47 +35,52 @@ export class Userprofile {
 
   
   users = [
-    {
-      name : 'Hari',
-      email : 'hari@gmail.com',
-      role : 'Frontend Developer',
-      image : 'images/me.png',
-      description : 'Passionate developer learning Angular and building modern web apps.'
+
+     {
+      name : 'Prasanna',
+      email : 'prasanna@gmail.com',
+      role : 'Senior Software Developer',
+      description : 'Analyze requirements and design system architecture.',
+      images: 'images/pk.jfif'
     },
-    {
-      name : 'sathya',
-      email : 'sathya@gmail.com',
-      role : 'Data Engineer',
-      description : 'Passionate developer learning Angular and building modern web apps.'
-    },
-    {
-      name : 'Vineesh',
-      email : 'Vineesh@gmail.com',
-      role : 'Business analyst',
-      description : 'Passionate developer learning Angular and building modern web apps.'
-    },
+    
+    
+    // {
+    //   name : 'Vineesh',
+    //   email : 'Vineesh@gmail.com',
+    //   role : 'Business analyst',
+    //   description : 'Collaborate with stakeholders, developers, testers, and project managers.',
+    //     images: 'images/vineesh.JPG'  
+    // },
     {
       name : 'Ragul',
       email : 'ragul@gmail.com',
       role : 'QA Tester',
-      image : 'images/me.png',
-      description : 'Passionate developer learning Angular and building modern web apps.'
+      image : 'images/me.jpg',
+      description : 'Conduct various types of testing like functional, performance, regression, and UAT (User Acceptance Testing).',
+        images: 'images/ragul.JPG'
     },
     {
       name : 'Muthu',
       email : 'muthu@gmail.com',
       role : 'Full stack Developer',
-      description : 'Passionate developer learning Angular and building modern web apps.'
+      description : 'Design and develop frontend user interfaces using modern frameworks.',
+        images: 'images/muthu.JPG'   
     },
     {
-      name : 'Prasanna',
-      email : 'prasanna@gmail.com',
-      role : 'Senior Software Developer',
-      description : 'Passionate developer learning Angular and building modern web apps.'
+      name : 'sathya',
+      email : 'sathya@gmail.com',
+      role : 'Data Engineer',
+      description : 'Work with large-scale datasets from multiple sources (databases, APIs, logs, etc.).',
+        images: 'images/sathya.jfif'
+    },
+   {
+      name : 'Hari',
+      email : 'hari@gmail.com',
+      role : 'Frontend Developer',
+      image : 'images/me.jpg',
+      description : 'Passionate developer learning Angular and building modern web apps.',
+      images: 'images/hari.jfif'
     }
-
-
-
-
   ];
 }
