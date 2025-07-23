@@ -55,7 +55,7 @@ export class Userprofile {
     {
       name : 'Ragul',
       email : 'ragul@gmail.com',
-      role : 'Senior Software QA Tester',
+      role : 'Senior Software QA Engineer',
       image : 'images/me.jpg',
       description : 'Conduct various types of testing like functional, performance, regression, and UAT (User Acceptance Testing).',
         images: 'images/ragul bro_1.jfif'
