@@ -58,14 +58,14 @@ export class Userprofile {
       role : 'QA Tester',
       image : 'images/me.jpg',
       description : 'Conduct various types of testing like functional, performance, regression, and UAT (User Acceptance Testing).',
-        images: 'images/ragul.JPG'
+        images: 'images/ragul bro_1.jfif'
     },
     {
       name : 'Muthu',
       email : 'muthu@gmail.com',
       role : 'Full stack Developer',
       description : 'Design and develop frontend user interfaces using modern frameworks.',
-        images: 'images/muthu.JPG'   
+        images: 'images/muthu bro.jfif'   
     },
     {
       name : 'sathya',
