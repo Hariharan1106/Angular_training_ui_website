@@ -7,12 +7,12 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './navbar.html',
-  styleUrl: './navbar.css'
+  styleUrl: './navbar.css',
 })
 export class Navbar {
-showMenu = false;
+  showMenu = false;
 
-toggleMenu() {
+  toggleMenu() {
     this.showMenu = !this.showMenu;
   }
 }
